@@ -2,12 +2,7 @@
 import {Suspense} from 'react';
 import ResetPassword from '@/app/reset-password/resetPassword';
 
-type State = {
-  success: boolean;
-  error: string | null;
-};
-
-async function reducerAction(prevState: State, formData: FormData) {
+export default function ResetPasswordPage() {
   return (
     <Suspense fallback={<div>Завантаження...</div>}>
       <ResetPassword />
