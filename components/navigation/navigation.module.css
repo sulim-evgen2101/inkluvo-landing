@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-block: 16px;
+  padding-inline: 16px;
+  @media screen and (min-width: 768px) {
+    padding-inline: 40px;
+  }
+}
+.relative {
+  position: relative;
+}
+.container {
+  background: var(--bg-header);
+  padding-block: 10px;
+}
+.burger {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+}
+.burgerLine {
+  height: 2px;
+  background: var(--color);
+  width: 100%;
+  transition: all 250ms ease;
+}
+.topLine {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+.middleLine {
+  width: 0;
+}
+.bottomLine {
+  transform: rotate(-45deg) translate(8px, -8px);
+}

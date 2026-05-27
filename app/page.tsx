@@ -1,65 +1,383 @@
-import Image from "next/image";
+import React from 'react';
+import css from './page.module.css';
+import ScrollTop from '@/components/scrollTop/scrollTop';
 
-export default function Home() {
+export default function TermsOfUse() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className={css.main}>
+      <ScrollTop />
+
+      <h1 className={css.mainTitle}>УМОВИ КОРИСТУВАННЯ</h1>
+
+      <p className={css.text}>
+        Дата оновлення: <span className={css.date}>27.05.2026</span>
+      </p>
+
+      <p className={css.text}>
+        Ці Умови користування регулюють доступ до мобільного застосунку Inkluvo
+        та його використання.
+      </p>
+
+      <p className={css.text}>
+        Користуючись застосунком, ви погоджуєтесь із цими Умовами. Якщо ви не
+        погоджуєтесь з ними, будь ласка, не використовуйте застосунок.
+      </p>
+
+      <ul className={css.list}>
+        <li>
+          <h2 className={css.title}>1. Опис сервісу</h2>
+
+          <p className={css.text}>
+            Inkluvo — це мобільний застосунок, який допомагає користувачам
+            знаходити, додавати та перевіряти інформацію про доступність місць.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+          <p className={css.text}>Користувачі можуть:</p>
+
+          <ul className={css.list}>
+            <li className={css.unList}>переглядати місця на мапі;</li>
+            <li className={css.unList}>шукати місця поблизу;</li>
+            <li className={css.unList}>додавати нові місця;</li>
+            <li className={css.unList}>описувати рівень доступності;</li>
+            <li className={css.unList}>завантажувати фото;</li>
+            <li className={css.unList}>залишати коментарі;</li>
+            <li className={css.unList}>зберігати місця;</li>
+            <li className={css.unList}>
+              повідомляти про неточну або неприйнятну інформацію.
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 className={css.title}>2. Реєстрація та акаунт</h2>
+
+          <p className={css.text}>
+            Для доступу до частини функцій застосунку може бути потрібна
+            реєстрація.
+          </p>
+
+          <p className={css.text}>
+            Під час реєстрації користувач надає ім’я, адресу електронної пошти
+            та пароль. Користувач зобов’язується надавати достовірну інформацію
+            та не використовувати чужі дані.
+          </p>
+
+          <p className={css.text}>
+            Користувач відповідає за збереження конфіденційності свого пароля та
+            за всі дії, які виконуються через його акаунт.
+          </p>
+
+          <p className={css.text}>
+            Якщо ви помітили несанкціонований доступ до свого акаунта, повідомте
+            нас якомога швидше.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>3. Користування неповнолітніми</h2>
+
+          <p className={css.text}>
+            Inkluvo не встановлює окремого вікового обмеження для створення
+            акаунта.
+          </p>
+
+          <p className={css.text}>
+            Якщо користувач є неповнолітньою особою, рекомендується
+            користуватися застосунком за відома батьків або законного
+            представника.
+          </p>
+
+          <p className={css.text}>
+            Батьки або законні представники можуть звернутися до нас із запитом
+            щодо видалення акаунта або персональних даних неповнолітнього
+            користувача.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>4. Правила користування</h2>
+
+          <p className={css.text}>
+            Користувач зобов’язується використовувати Inkluvo добросовісно та
+            законно.
+          </p>
+
+          <p className={css.text}>Заборонено:</p>
+
+          <ul className={css.list}>
+            <li className={css.unList}>
+              додавати неправдиву або навмисно оманливу інформацію;
+            </li>
+            <li className={css.unList}>
+              публікувати образливі, дискримінаційні або незаконні матеріали;
+            </li>
+            <li className={css.unList}>
+              завантажувати фото без права на їх використання;
+            </li>
+            <li className={css.unList}>
+              публікувати персональні дані інших людей без їхньої згоди;
+            </li>
+            <li className={css.unList}>
+              використовувати застосунок для спаму;
+            </li>
+            <li className={css.unList}>
+              намагатися отримати несанкціонований доступ до системи;
+            </li>
+            <li className={css.unList}>
+              порушувати роботу застосунку, сервера або API;
+            </li>
+            <li className={css.unList}>
+              використовувати застосунок у спосіб, що шкодить іншим
+              користувачам.
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 className={css.title}>5. Контент користувачів</h2>
+
+          <p className={css.text}>
+            Користувач може додавати до застосунку інформацію про місця, фото,
+            описи, коментарі та інші матеріали.
+          </p>
+
+          <p className={css.text}>
+            Додаючи контент, користувач підтверджує, що:
+          </p>
+
+          <ul className={css.list}>
+            <li className={css.unList}>має право публікувати такий контент;</li>
+            <li className={css.unList}>контент не порушує закон;</li>
+            <li className={css.unList}>
+              контент не порушує права третіх осіб;
+            </li>
+            <li className={css.unList}>
+              інформація є добросовісною та, наскільки користувачу відомо,
+              достовірною.
+            </li>
+          </ul>
+
+          <p className={css.text}>
+            Користувач зберігає права на свій контент, але надає Inkluvo дозвіл
+            використовувати, зберігати, відображати, обробляти та поширювати цей
+            контент у межах роботи застосунку.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>6. Модерація</h2>
+
+          <p className={css.text}>
+            Ми можемо переглядати, приховувати, редагувати або видаляти контент,
+            якщо вважаємо, що він порушує ці Умови, закон, права інших осіб або
+            шкодить роботі сервісу.
+          </p>
+
+          <p className={css.text}>
+            Ми також можемо обмежити, заблокувати або видалити акаунт
+            користувача у випадку порушення цих Умов.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>7. Точність інформації</h2>
+
+          <p className={css.text}>
+            Inkluvo прагне надавати корисну інформацію про доступність місць,
+            однак частина інформації створюється користувачами.
+          </p>
+
+          <p className={css.text}>
+            Ми не гарантуємо, що вся інформація в застосунку завжди є повною,
+            точною або актуальною.
+          </p>
+
+          <p className={css.text}>
+            Перед відвідуванням місця рекомендуємо за можливості самостійно
+            перевіряти важливу інформацію, особливо якщо вона стосується
+            доступності, безпеки або спеціальних потреб.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>8. Геолокація та мапа</h2>
+
+          <p className={css.text}>
+            Для роботи мапи та пошуку місць поблизу застосунок може
+            використовувати геолокацію пристрою.
+          </p>
+
+          <p className={css.text}>
+            Користувач самостійно надає або відкликає дозвіл на доступ до
+            геолокації через налаштування пристрою.
+          </p>
+
+          <p className={css.text}>
+            Якщо геолокація вимкнена, частина функцій застосунку може бути
+            недоступною або працювати обмежено.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>9. Фото</h2>
+
+          <p className={css.text}>Користувач може завантажувати фото місць.</p>
+
+          <p className={css.text}>Заборонено завантажувати фото, які:</p>
+
+          <ul className={css.list}>
+            <li className={css.unList}>порушують авторські права;</li>
+            <li className={css.unList}>
+              містять приватну інформацію інших осіб;
+            </li>
+            <li className={css.unList}>зображують людей без їхньої згоди;</li>
+            <li className={css.unList}>є образливими або незаконними;</li>
+            <li className={css.unList}>не стосуються відповідного місця.</li>
+          </ul>
+
+          <p className={css.text}>
+            Ми можемо видаляти фото, які порушують ці Умови.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>10. Скарги та блокування</h2>
+
+          <p className={css.text}>
+            Користувачі можуть повідомляти про порушення, неточну інформацію або
+            неприйнятну поведінку інших користувачів.
+          </p>
+
+          <p className={css.text}>
+            Ми можемо розглянути скаргу та вжити заходів, зокрема видалити
+            контент, обмежити доступ до функцій, заблокувати акаунт або видалити
+            акаунт у разі серйозних чи повторних порушень.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>11. Видалення акаунта</h2>
+
+          <p className={css.text}>
+            Користувач може видалити свій акаунт або звернутися до нас із
+            запитом на видалення.
+          </p>
+
+          <p className={css.text}>
+            Після видалення акаунта деякі публічні дані, наприклад інформація
+            про місця або знеособлені записи, можуть залишатися в застосунку,
+            якщо це потрібно для збереження цілісності сервісу та користі для
+            інших користувачів.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>12. Інтелектуальна власність</h2>
+
+          <p className={css.text}>
+            Назва, логотип, дизайн, програмний код, структура, елементи
+            інтерфейсу та інші матеріали Inkluvo належать власникам сервісу або
+            використовуються на законних підставах.
+          </p>
+
+          <p className={css.text}>
+            Заборонено копіювати, змінювати, поширювати або використовувати
+            елементи Inkluvo без дозволу, крім випадків, прямо дозволених
+            законом або цими Умовами.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>13. Сторонні сервіси</h2>
+
+          <p className={css.text}>
+            Застосунок може використовувати сторонні сервіси, зокрема
+            картографічні, хостингові, аналітичні або технічні сервіси.
+          </p>
+
+          <p className={css.text}>
+            Ми не відповідаємо за роботу сторонніх сервісів, але використовуємо
+            їх для забезпечення функціональності Inkluvo.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>14. Обмеження відповідальності</h2>
+
+          <p className={css.text}>
+            Inkluvo надається за принципом “як є”. Ми не гарантуємо, що
+            застосунок завжди працюватиме без помилок, перерв або технічних
+            збоїв.
+          </p>
+
+          <p className={css.text}>Ми не несемо відповідальності за:</p>
+
+          <ul className={css.list}>
+            <li className={css.unList}>
+              неточну інформацію, додану користувачами;
+            </li>
+            <li className={css.unList}>
+              рішення, прийняті на основі інформації із застосунку;
+            </li>
+            <li className={css.unList}>тимчасову недоступність сервісу;</li>
+            <li className={css.unList}>технічні збої або втрату даних;</li>
+            <li className={css.unList}>дії третіх осіб;</li>
+            <li className={css.unList}>
+              неможливість користування застосунком через налаштування пристрою
+              або відсутність дозволів.
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 className={css.title}>15. Зміни в роботі застосунку</h2>
+
+          <p className={css.text}>
+            Ми можемо змінювати, оновлювати, тимчасово призупиняти або припиняти
+            роботу окремих функцій застосунку.
+          </p>
+
+          <p className={css.text}>
+            Такі зміни можуть відбуватися без попереднього повідомлення, якщо це
+            потрібно для безпеки, оновлення або стабільної роботи сервісу.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>16. Зміни до Умов</h2>
+
+          <p className={css.text}>
+            Ми можемо оновлювати ці Умови користування. Нова редакція набирає
+            чинності з моменту її публікації в застосунку або на сайті.
+          </p>
+
+          <p className={css.text}>
+            Подальше використання Inkluvo після оновлення Умов означає згоду
+            користувача з новою редакцією.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>17. Застосовне право</h2>
+
+          <p className={css.text}>
+            Ці Умови регулюються законодавством України.
+          </p>
+        </li>
+
+        <li>
+          <h2 className={css.title}>18. Контакти</h2>
+
+          <div className={css.text}>
+            З усіх питань щодо цих Умов можна звертатися за адресою:
+            <div>
+              <a href='mailto:inkluvo@ukr.net' className={css.linkMail}>
+                📧 inkluvo@ukr.net
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
   );
 }

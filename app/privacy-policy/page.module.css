@@ -1,0 +1,61 @@
+.main {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  padding-bottom: 60px;
+}
+.text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.259px;
+  padding-block: 8px;
+}
+.mainTitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.346px;
+}
+.date {
+  color: var(--date-color);
+}
+.title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.259px;
+  margin: 24px 0 16px 0;
+  text-transform: uppercase;
+}
+.sign {
+  font-weight: 500;
+}
+.list {
+  li {
+    list-style: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.259px;
+  }
+}
+.link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--color);
+}
+.unList {
+  list-style: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.259px;
+}
+.linkMail {
+  color: var(--logo-secondary);
+}
