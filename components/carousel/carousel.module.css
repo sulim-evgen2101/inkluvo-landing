@@ -1,0 +1,76 @@
+.carouselWrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carouselContainer {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 720px;
+  object-fit: contain;
+  border-radius: 18px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.button {
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  padding-inline: 24px;
+  padding-block: 12px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+@media (min-width: 768px) {
+  .slide {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .image {
+    max-height: 760px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slide {
+    flex: 0 0 calc(33.333% - 11px);
+  }
+
+  .image {
+    max-height: 780px;
+  }
+}

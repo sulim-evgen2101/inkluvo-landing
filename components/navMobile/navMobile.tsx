@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import css from './navMobile.module.css';
 import {usePathname} from 'next/navigation';
+import {Routes} from '@/types/routes';
 
 interface Props {
   isOpen: boolean;
@@ -19,20 +20,31 @@ export default function NavMobile({isOpen, setIsOpen}: Props) {
       <Link
         onClick={toggleOpenModal}
         className={
-          pathname === '/privacy-policy'
+          pathname === '/' ? `${css.navList} ${css.active}` : css.navList
+        }
+        href='/'
+      >
+        Головна
+      </Link>
+      <Link
+        onClick={toggleOpenModal}
+        className={
+          pathname === `/${Routes.PRIVACY_POLICY}`
             ? `${css.navList} ${css.active}`
             : css.navList
         }
-        href='/privacy-policy'
+        href={`/${Routes.PRIVACY_POLICY}`}
       >
         Політика конфіденційності
       </Link>
       <Link
         onClick={toggleOpenModal}
         className={
-          pathname === '/' ? `${css.navList} ${css.active}` : css.navList
+          pathname === `/${Routes.TERM_OF_USE}`
+            ? `${css.navList} ${css.active}`
+            : css.navList
         }
-        href='/'
+        href={`/${Routes.TERM_OF_USE}`}
       >
         Умови користування
       </Link>
