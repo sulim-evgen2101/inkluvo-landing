@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
       <h1 className={css.mainTitle}>ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</h1>
 
       <p className={css.text}>
-        Дата оновлення: <span className={css.date}>27.05.2026</span>
+        Дата оновлення: <span className={css.date}>12.06.2026</span>
       </p>
 
       <p className={css.text}>
