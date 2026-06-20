@@ -10,6 +10,7 @@ const photos = [
   '/images/photo_3.jpg',
   '/images/photo_4.jpg',
   '/images/photo_5.jpg',
+  '/images/photo_12.jpg',
   '/images/photo_6.jpg',
   '/images/photo_7.jpg',
   '/images/photo_8.jpg',
