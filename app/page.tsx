@@ -9,7 +9,10 @@ export default function Home() {
           <div className={css.badgeBox}>
             <p className={css.text}>Інклюзивний mobile-додаток:</p>
             <div className={css.actions}>
-              <a className={css.primaryButton} href=''>
+              <a
+                className={css.primaryButton}
+                href='https://play.google.com/apps/internaltest/4701702126940081656'
+              >
                 Android ✅
               </a>
               {/* <a className={css.secondaryButton} href=''>
