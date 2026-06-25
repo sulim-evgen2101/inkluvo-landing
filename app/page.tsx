@@ -11,7 +11,7 @@ export default function Home() {
             <div className={css.actions}>
               <a
                 className={css.primaryButton}
-                href='https://play.google.com/apps/internaltest/4701702126940081656'
+                // href='https://play.google.com/apps/internaltest/4701702126940081656'
               >
                 Android ✅
               </a>
