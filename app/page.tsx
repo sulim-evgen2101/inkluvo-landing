@@ -6,7 +6,17 @@ export default function Home() {
     <main className={css.main}>
       <section className={css.hero}>
         <div className={css.heroText}>
-          <p className={css.badge}>Інклюзивний mobile-додаток</p>
+          <div className={css.badgeBox}>
+            <p className={css.text}>Інклюзивний mobile-додаток:</p>
+            <div className={css.actions}>
+              <a className={css.primaryButton} href=''>
+                Android ✅
+              </a>
+              {/* <a className={css.secondaryButton} href=''>
+                iOS ✅
+              </a> */}
+            </div>
+          </div>
 
           <h1 className={css.mainTitle}>inkluvo — мапа доступності закладів</h1>
 

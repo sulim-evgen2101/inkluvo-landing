@@ -4,7 +4,6 @@
   padding-inline: 16px;
   padding-block: 60px;
 }
-
 .hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -17,6 +16,13 @@
   max-width: 760px;
 }
 
+.badgeTitle {
+  margin-right: 4px;
+}
+
+.badgeBox {
+  margin-block: 16px;
+}
 .badge {
   display: inline-flex;
   width: fit-content;
