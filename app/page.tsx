@@ -135,7 +135,7 @@ export default function Home() {
         </div>
 
         <a
-          href='https://docs.google.com/forms/d/e/1FAIpQLSfPukQw3zNLW7Bsh7GAzW1UEHAjFaDjxRa0IKp-I8lbIZwY4w/viewform?usp=publish-editor'
+          href='https://docs.google.com/forms/d/e/1FAIpQLSd7PokeUBtLd7NzjG0COY0sFj9p6UIpXKYd8Yo5f4nGqShoxw/viewform?usp=publish-editor'
           target='_blank'
           rel='noreferrer'
           className={css.primaryButton}
