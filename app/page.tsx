@@ -49,7 +49,7 @@ export default function Home() {
         <div className={css.heroCard}>
           <span className={css.cardNumber}>14 днів</span>
           <p className={css.cardText}>
-            Потрібно 20 тестувальників для закритого тестування Android-версії
+            Потрібно 12 тестувальників для закритого тестування Android-версії
             перед публікацією в Google Play.
           </p>
         </div>
