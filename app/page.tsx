@@ -130,12 +130,36 @@ export default function Home() {
 
       <section className={css.testing} id='testing'>
         <div>
-          <p className={css.title}>Допоможіть протестувати додаток</p>
+          <h2 className={css.title}>Допоможіть протестувати додаток</h2>
 
+          <p className={` ${css.subtitle} ${css.text}`}>
+            Щоб взяти участь у закритому тестуванні, потрібно лише кілька
+            хвилин:
+          </p>
           <p className={css.text}>
-            Зараз потрібні Android-користувачі для закритого тестування.
-            Тестувальники отримають доступ до додатку, встановлять його та
-            допоможуть перевірити роботу основних функцій.
+            <span>Залиште Gmail-адресу</span>,яка використовується у вашому
+            Google Play.
+          </p>
+          <p className={css.text}>
+            <span className={css.explain}>
+              Я додаю цей акаунт до списку тестувальників
+            </span>{' '}
+            у Google Play Console.
+          </p>
+          <p className={css.text}>
+            <span className={css.explain}>Ви отримаєте посилання</span> на цю
+            пошту для приєднання до закритого тестування та встановлення
+            застосунку.
+          </p>
+          <p className={css.text}>
+            <span className={css.explain}>Перейдіть за посиланням</span>, яке
+            отримаєте після додавання до списку тестувальників, та встановіть
+            Inkluvo через Google Play.
+          </p>
+          <p className={css.text}>
+            <span className={css.explain}>Користуйтеся застосунком</span> у
+            звичайному режимі та, за можливості, повідомте про помилки,
+            незручності або свої враження.
           </p>
         </div>
 
