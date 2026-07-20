@@ -137,7 +137,7 @@ export default function Home() {
             хвилин:
           </p>
           <p className={`${css.text} ${css.indent}`}>
-            <span className={css.explain}>- Залиште Gmail-адресу</span>,яка
+            <span className={css.explain}>- Залиште Gmail-адресу</span>, яка
             використовується у вашому Google Play.
           </p>
           <p className={`${css.text} ${css.indent}`}>
