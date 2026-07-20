@@ -12,6 +12,11 @@
   padding: 40px 0 64px;
 }
 
+.warning {
+  color: chocolate;
+  font-weight: 600;
+}
+
 .heroText {
   max-width: 760px;
 }

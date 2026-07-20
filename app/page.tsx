@@ -52,6 +52,11 @@ export default function Home() {
             Потрібно 12 тестувальників для закритого тестування Android-версії
             перед публікацією в Google Play.
           </p>
+          <p className={css.cardText}>
+            <span className={css.warning}>Увага</span>: коли будете створювати
+            заклад якого не існує, просто для тесту, вказуйте в назві закладу
+            ''видалити''
+          </p>
         </div>
       </section>
 
