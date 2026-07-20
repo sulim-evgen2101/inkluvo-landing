@@ -147,19 +147,27 @@ export default function Home() {
             у Google Play Console.
           </p>
           <p className={css.text}>
-            <span className={css.explain}>Ви отримаєте посилання</span> на цю
-            пошту для приєднання до закритого тестування та встановлення
-            застосунку.
+            <span className={css.explain}>
+              На вказану Gmail-адресу ви отримаєте посилання
+            </span>
+            для приєднання до закритого тестування.
           </p>
           <p className={css.text}>
-            <span className={css.explain}>Перейдіть за посиланням</span>, яке
-            отримаєте після додавання до списку тестувальників, та встановіть
-            Inkluvo через Google Play.
+            <span className={css.explain}>
+              Перейдіть за цим посиланням та встановіть Inkluvo через Google
+              Play.
+            </span>
           </p>
           <p className={css.text}>
             <span className={css.explain}>Користуйтеся застосунком</span> у
             звичайному режимі та, за можливості, повідомте про помилки,
             незручності або свої враження.
+          </p>
+          <p className={css.text}>
+            <span className={css.explain}>
+              💙 Ваш відгук допоможе зробити Inkluvo кращим і підготувати його
+              до публічного запуску.
+            </span>
           </p>
         </div>
 
