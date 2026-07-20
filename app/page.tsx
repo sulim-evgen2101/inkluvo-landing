@@ -136,30 +136,30 @@ export default function Home() {
             Щоб взяти участь у закритому тестуванні, потрібно лише кілька
             хвилин:
           </p>
-          <p className={css.text}>
-            <span>Залиште Gmail-адресу</span>,яка використовується у вашому
-            Google Play.
+          <p className={`${css.text} ${css.indent}`}>
+            <span className={css.explain}>- Залиште Gmail-адресу</span>,яка
+            використовується у вашому Google Play.
           </p>
-          <p className={css.text}>
+          <p className={`${css.text} ${css.indent}`}>
             <span className={css.explain}>
-              Я додаю цей акаунт до списку тестувальників
+              - Я додаю цей акаунт до списку тестувальників
             </span>{' '}
             у Google Play Console.
           </p>
-          <p className={css.text}>
+          <p className={`${css.text} ${css.indent}`}>
             <span className={css.explain}>
-              На вказану Gmail-адресу ви отримаєте посилання
+              - На вказану Gmail-адресу ви отримаєте посилання
             </span>
             для приєднання до закритого тестування.
           </p>
-          <p className={css.text}>
+          <p className={`${css.text} ${css.indent}`}>
             <span className={css.explain}>
-              Перейдіть за цим посиланням та встановіть Inkluvo через Google
+              - Перейдіть за цим посиланням та встановіть Inkluvo через Google
               Play.
             </span>
           </p>
-          <p className={css.text}>
-            <span className={css.explain}>Користуйтеся застосунком</span> у
+          <p className={`${css.text} ${css.indent}`}>
+            <span className={css.explain}>- Користуйтеся застосунком</span> у
             звичайному режимі та, за можливості, повідомте про помилки,
             незручності або свої враження.
           </p>
